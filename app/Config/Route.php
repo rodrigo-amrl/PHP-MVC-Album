@@ -3,7 +3,7 @@
 namespace App\Config;
 
 use Pecee\SimpleRouter\SimpleRouter;
-use App\Adapter\Controllers; 
+use App\Controllers; 
 
 
 SimpleRouter::get('/', [Controllers\Client\ClientController::class, 'index']);
