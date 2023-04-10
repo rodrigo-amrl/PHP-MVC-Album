@@ -1,12 +1,25 @@
-import { defineConfig } from "vite";
-const path = require('path')
+
+import { defineConfig, splitVendorChunkPlugin } from 'vite'
+import liveReload from 'vite-plugin-live-reload'
+import path from 'path'
 
 export default defineConfig({
-  root: path.resolve(__dirname, 'resources'),
-  resolve: {
-    alias: {
-      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+
+  plugins: [
+    liveReload([
+      __dirname + '/(app|config|views)/**/*.php',
+      __dirname + '/../public/*.php',
+    ]),
+    splitVendorChunkPlugin(),
+  ],
+  root: 'resources',
+  base: '/',
+  build: {
+    outDir: 'public',
+    emptyOutDir: true,
+    manifest: true,
+    rollupOptions: {
+      input: path.resolve(__dirname, 'resources/js/app.js'),
     }
   },
-
 })

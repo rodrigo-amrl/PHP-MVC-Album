@@ -1,4 +1,19 @@
-<?php
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<!-- meta,js,css -->
+<?php include('header.php') ?>
 
-die('aqui');
+<body>
+  <!-- menu superior -->
+  <?php include('menu.php') ?>
+
+  <!-- content -->
+  <?php include($page);  ?>
+
+  <!-- footer -->
+  <?php include('footer.php') ?>
+
+</body>
+
+</html>
