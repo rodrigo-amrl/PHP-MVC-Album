@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Rodrigo Amaral">
-    <title>PHP Projetct Example</title>
+    <title>PHP Project Example</title>
     <script type="module" src="<?= vite_url('js/app.js') ?>"></script>
     <style>
         .bd-placeholder-img {

@@ -17,7 +17,6 @@ class ClientController extends Controller
     }
     public function index()
     {
-
-        return $this->view('home');
+        return $this->view('pages/home/home');
     }
 }
