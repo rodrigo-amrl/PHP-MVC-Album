@@ -3,13 +3,15 @@
 namespace App\Config;
 
 use Pecee\SimpleRouter\SimpleRouter;
-use App\Controllers; 
+use App\Controllers;
 
 
-SimpleRouter::get('/', [Controllers\Client\ClientController::class, 'index']);
+SimpleRouter::get('/', [Controllers\Album\AlbumController::class, 'index']);
+SimpleRouter::get('/album/edit/{id}', [Controllers\Album\AlbumController::class, 'edit']);
+SimpleRouter::get('/album/delete/{id}', [Controllers\Album\AlbumController::class, 'edit']);
 
 
-SimpleRouter::setDefaultNamespace(Controllers\Client\ClientController::class);
+SimpleRouter::setDefaultNamespace(Controllers\Album\AlbumController::class);
 
 // Start the routing
 SimpleRouter::start();

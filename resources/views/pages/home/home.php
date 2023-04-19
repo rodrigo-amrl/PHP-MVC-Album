@@ -2,10 +2,16 @@
 
 $albuns = [
     [
+        'id' => 1,
         'nome' => "Minhas fotos",
-        'descricao' => 'Teste'
+        'descricao_curta' => "Teste",
+        'descricao' => 'Teste',
+        'imagem_inicial' => 'floresta.jpg'
     ], [
+        'id' => 1,
         'nome' => "teste",
+        'descricao_curta' => "Tes\zxfsfte",
+        'imagem_inicial' => 'floresta.jpg',
         'descricao' => 'Teste'
     ]
 ];

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers\Client;
+namespace App\Controllers\Album;
 
 use App\Controllers\Controller;
 
 
-class ClientController extends Controller
+class AlbumController extends Controller
 {
 
 
@@ -17,6 +17,10 @@ class ClientController extends Controller
     }
     public function index()
     {
-        return $this->view('pages/home/home');
+        return $this->view('home');
+    }
+    public function edit($id)
+    {
+        return $this->view('album/edit');
     }
 }
