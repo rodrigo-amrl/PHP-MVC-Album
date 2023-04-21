@@ -20,7 +20,7 @@ $albuns = [
     <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Bem vindo ao Álbum</h1>
-            <p class="lead text-muted">Fique a vontade para olhar, as fotos, códigos, estrutura...</p>
+            <p class="lead text-muted">Fique a vontade para olhar as fotos, códigos, estrutura...</p>
         </div>
     </div>
 </section>
@@ -28,7 +28,7 @@ $albuns = [
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <?php foreach ($albuns as $album) {  ?>
-                <?php include('album_card.php') ?>
+                <?php include('album/album_card.php') ?>
             <?php } ?>
         </div>
     </div>

@@ -19,6 +19,10 @@ class AlbumController extends Controller
     {
         return $this->view('home');
     }
+    public function show()
+    {
+        return $this->view('album/show/album_show');
+    }
     public function edit($id)
     {
         return $this->view('album/edit');

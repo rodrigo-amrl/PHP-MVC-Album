@@ -15,10 +15,10 @@ class Controller
      * @param array $data
      * @param string $layout
      */
-    public function view($file, $data = [], $layout = 'layout')
+    public function view($file, $data = [], $layout = 'layout', $path = "pages/")
     {
         //pagina atual
-        $page = BASE_VIEW . $file . '.php';
+        $page = BASE_VIEW . $path . $file . '.php';
 
         //transforma os dados do array em variáveis
         extract($data);

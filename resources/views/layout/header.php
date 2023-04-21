@@ -5,6 +5,8 @@
     <meta name="author" content="Rodrigo Amaral">
     <title>PHP Project Example</title>
     <script type="module" src="<?= vite_url('js/app.js') ?>"></script>
+    <script type="module" src="<?= vite_url('js/album.js') ?>"></script>
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
