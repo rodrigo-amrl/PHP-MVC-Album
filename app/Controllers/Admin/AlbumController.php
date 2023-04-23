@@ -17,14 +17,14 @@ class AlbumController extends Controller
     }
     public function index()
     {
-        return $this->view('home');
+        return view('home');
     }
     public function show()
     {
-        return $this->view('album/show/album_show');
+        return view('album/show/album_show');
     }
     public function edit($id)
     {
-        return $this->view('album/edit');
+        return view('album/edit');
     }
 }
