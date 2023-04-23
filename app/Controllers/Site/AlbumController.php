@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Album;
+namespace App\Controllers\Site;
 
 use App\Controllers\Controller;
 

@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Controllers\Album;
+namespace App\Controllers\Admin;
 
 use App\Controllers\Controller;
 
 
-class AlbumController extends Controller
+class LoginController extends Controller
 {
+    const PATH_ADMIN = 'admin/pages/';
 
 
     public function __construct()
@@ -15,9 +16,14 @@ class AlbumController extends Controller
         ini_set('display_startup_errors', 1);
         error_reporting(E_ALL);
     }
-    public function index()
+    public function login()
     {
-        return view('home');
+        if (!empty(input()->all())) {
+            print_r(input()->all());
+            die();
+        }
+
+        return view('login', layout: 'layout_clear', path: self::PATH_ADMIN);
     }
     public function show()
     {
