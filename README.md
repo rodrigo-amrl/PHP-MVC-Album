@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://pt-br.reactjs.org/">🔗 Projeto em PHP utilizando padrão MVC</a>
+    <a>🔗 Projeto em PHP utilizando padrão MVC</a>
 </h1>
 <p align="center">🚀 Exemplo de um site de album de fotos, utilizando o php 8, utilizando padrão MVC</p>
 
