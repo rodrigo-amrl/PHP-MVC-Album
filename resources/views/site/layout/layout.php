@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<!-- meta,js,css -->
+<html class="h-full bg-gray-100" lang="pt-br">
 <?php include('header.php') ?>
 
-<body>
-  <!-- menu superior -->
-  <?php include('menu.php') ?>
+<body class="h-full">
+  <div class="min-h-full">
+    <?php include('menu.php') ?>
+    <?php include($page);  ?>
 
-  <!-- content -->
-  <?php include($page);  ?>
-
-  <!-- footer -->
-  <?php include('footer.php') ?>
-
+  </div>
 </body>
 
 </html>

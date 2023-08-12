@@ -15,11 +15,9 @@ export default defineConfig({
   root: 'resources',
   base: '/',
   build: {
-    outDir: 'public',
-    emptyOutDir: true,
     manifest: true,
     rollupOptions: {
-      input: path.resolve(__dirname, 'resources/js/app.js'),
-    }
+      input: '/public/app.js',
+    },
   },
 })

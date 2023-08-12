@@ -5,7 +5,7 @@ namespace App\Controllers\Site;
 use App\Controllers\Controller;
 
 
-class AlbumController extends Controller
+class SiteController extends Controller
 {
 
 
@@ -19,12 +19,16 @@ class AlbumController extends Controller
     {
         return view('home');
     }
-    public function show()
+    public function sobre()
     {
-        return view('album/show/album_show');
+        return view('sobre');
     }
-    public function edit($id)
+    public function blog()
     {
-        return view('album/edit');
+        return view('blog');
+    }
+    public function contato()
+    {
+        return view('contato');
     }
 }

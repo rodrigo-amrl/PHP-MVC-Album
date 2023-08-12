@@ -3,20 +3,15 @@
 namespace App\Config;
 
 use Pecee\SimpleRouter\SimpleRouter;
-use App\Controllers\Admin;
 use App\Controllers\Site;
 
 
-SimpleRouter::get('/', [Site\AlbumController::class, 'index']);
-SimpleRouter::get('/album/edit/{id}', [Site\AlbumController::class, 'edit']);
-SimpleRouter::get('/album/show/{id}', [Site\AlbumController::class, 'show']);
+SimpleRouter::get('/', [Site\SiteController::class, 'index']);
+SimpleRouter::get('/sobre', [Site\SiteController::class, 'sobre']);
+SimpleRouter::get('/blog', [Site\SiteController::class, 'blog']);
+SimpleRouter::get('/contato', [Site\SiteController::class, 'contato']);
 
-SimpleRouter::group(['prefix' => 'admin'], function () {
-
-    SimpleRouter::match(['get', 'post'], 'login', [Admin\LoginController::class, 'login']);
-});
-
-SimpleRouter::setDefaultNamespace(Site\AlbumController::class);
+SimpleRouter::setDefaultNamespace(Site\SiteController::class);
 
 // Start the routing
 SimpleRouter::start();

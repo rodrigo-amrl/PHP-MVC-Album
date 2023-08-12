@@ -23,3 +23,10 @@ if (!function_exists('format_date')) {
         return  date('Y-m-d' . $datetime, strtotime(str_replace('/', '-', $data))) . $hour;
     }
 }
+function dd($data)
+{
+    "<pre>";
+    var_dump($data);
+    "</pre>";
+    die();
+}
