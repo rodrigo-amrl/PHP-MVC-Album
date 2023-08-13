@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a>🔗 Projeto em PHP utilizando padrão MVC</a>
+    <a>🔗 Projeto em PHP sem framework, utilizando padrão MVC</a>
 </h1>
 <p align="center">🚀 Exemplo de um blog utilizando o php 8, padrão MVC, vite, tailwind.</p>
 
