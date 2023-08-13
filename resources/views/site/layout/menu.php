@@ -8,10 +8,10 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="<?= route('') ?>" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                        <a href="<?= route('sobre') ?>" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Sobre</a>
-                        <a href="<?= route('blog') ?>" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Blog</a>
-                        <a href="<?= route('contato') ?>" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contato</a>
+                        <a href="<?= route('') ?>" class="<?= segment_url(1) == '' ? "bg-gray-900" : '' ?>  text-white rounded-md px-3 py-2 text-sm font-medium">Home </a>
+                        <a href="<?= route('sobre') ?>" class=" <?= segment_url(1) == 'sobre' ? "bg-gray-900" : '' ?>  text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Sobre</a>
+                        <a href="<?= route('blog') ?>" class="<?= segment_url(1) == 'blog' ? "bg-gray-900" : '' ?>  text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Blog</a>
+                        <a href="<?= route('contato') ?>" class="<?= segment_url(1) == 'contato' ? "bg-gray-900" : '' ?>  text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contato</a>
                     </div>
                 </div>
             </div>
@@ -19,4 +19,3 @@
         </div>
     </div>
 </nav>
-

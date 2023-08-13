@@ -15,6 +15,11 @@ function route($route, $id = null)
 
     return $url;
 }
+function segment_url($segment)
+{
+    $segments = explode('/', $_SERVER['REQUEST_URI']);
+    return $segments[$segment] ?? null;
+}
 function vite_url($file)
 {
     return App::VITE_URL . '/' . $file;
