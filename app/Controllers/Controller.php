@@ -5,7 +5,7 @@ namespace App\Controllers;
 class Controller
 {
 
-    protected array $data;
+    protected array $data = [];
     public function __construct()
     {
     }

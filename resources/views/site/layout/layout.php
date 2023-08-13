@@ -7,7 +7,10 @@
     <?php include('menu.php') ?>
     <?php include($page);  ?>
 
+    <?php include('scripts.php') ?>
+
   </div>
+
 </body>
 
 </html>

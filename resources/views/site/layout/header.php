@@ -7,4 +7,7 @@
     <script type="module" src="<?= vite_url('@vite/client') ?>"></script>
     <script type="module" src="<?= vite_url('js/app.js') ?>"></script>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
 </head>

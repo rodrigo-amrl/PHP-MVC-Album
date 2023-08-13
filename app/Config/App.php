@@ -12,6 +12,8 @@ class App
         'host' => "localhost",
         'port' => 3306,
         'dbname' => 'projeto',
-        'charset' => 'utf8mb4'
+        'charset' => 'utf8mb4',
+        'username' => 'root',
+        'password' => '1234'
     ];
 }

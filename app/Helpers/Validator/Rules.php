@@ -6,7 +6,7 @@ trait Rules
 {
     protected function required()
     {
-        if (!empty($this->field_value))
+        if (empty($this->field_value))
             $this->addError(' O campo ' . $this->field . ' é obrigatório');
     }
     protected function max()
