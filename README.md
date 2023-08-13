@@ -1,7 +1,7 @@
 <h1 align="center">
     <a>🔗 Projeto em PHP utilizando padrão MVC</a>
 </h1>
-<p align="center">🚀 Exemplo de um site de album de fotos utilizando o php 8 e o padrão MVC</p>
+<p align="center">🚀 Exemplo de um blog utilizando o php 8, padrão MVC, vite, tailwind.</p>
 
 ### Pré-requisitos
 
