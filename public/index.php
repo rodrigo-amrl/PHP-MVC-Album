@@ -1,5 +1,6 @@
 <?php
 
+use App\Config\App;
 use App\Config\Database;
 
 require_once '../vendor/autoload.php';
@@ -13,8 +14,10 @@ define('BASE_VIEW', __DIR__ . '/../resources/views/');
 
 
 require_once  '../app/Config/Database.php';
-// $config = require  '../app/Config/App.php';
-// $db = new Database($config['DATABASE']);
-// $posts  = $db->query('select * from posts')->fetchAll();
+$config = require  '../app/Config/App.php';
+$db_connection = new Database(App::DATABASE);
+
+// $posts  = $db_connection->query('select * from posts')->fetchAll();
+// dd($posts);
 
 require_once  '../app/Config/Route.php';

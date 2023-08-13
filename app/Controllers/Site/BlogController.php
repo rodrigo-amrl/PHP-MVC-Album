@@ -3,22 +3,28 @@
 namespace App\Controllers\Site;
 
 use App\Controllers\Controller;
-use App\Helpers\ValidateForm;
-use Pecee\Http\Request;
+use App\Helpers\Validator\FormValidate;
+use App\Repositories\BlogRepository;
 
 class BlogController extends Controller
 {
+    private $blogRepository;
+    public function __construct()
+    {
+        $this->blogRepository = new BlogRepository();
+    }
     public function index()
     {
-        return view('blog');
+        return $this->view('blog');
     }
     public function novo()
     {
-        if (($_POST)) {
-            $validate = ValidateForm::make(['titulo' => 'required', 'descricao' => 'required|min:10|max:50'], $_POST);
-            dd('passou');
+        if ($_POST) {
+            $this->data['errors'] = FormValidate::make(['titulo' => 'required', 'descricao' => 'required|min:10|max:50'], $_POST);
+            if (empty($this->data['errors']))
+                $this->blogRepository->save($_POST);
         }
 
-        return view('blog_create');
+        return $this->view('blog_create');
     }
 }
